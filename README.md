@@ -5,10 +5,11 @@
 ---
 > Desarrollar un preprosecamiento de un datasets haciendo uso de la libreria Pandas, donde se incluyen valores nulos, normalizacion, codificacion y eliminacion de duplicados
 
-## Estructura de Carpetas
+## Estructura de las carpetas
 proyecto/
-├── data/ # Datasets originales y procesados
-├── src/ # Código fuente
-├── docs/ # Documentación
-├── tests/ # Pruebas
-└── outputs/ # Resultados y reportes
+├── data/      # Datasets
+├── src/       # Código fuente
+├── docs/      # Documentación
+├── tests/     # Pruebas
+└── outputs/   # Resultados y reportes
+
