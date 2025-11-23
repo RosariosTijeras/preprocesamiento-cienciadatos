@@ -1,16 +1,17 @@
 import matplotlib.pyplot as plt
 import time
-from codigo_original import main as ejecutar_original
-from codigo_optimizado import main as ejecutar_optimizado
 
-def medir_tiempo(func):
+def medir_tiempo(funcion):
 	inicio = time.time()
-	func()
+	funcion()
 	fin = time.time()
 	return fin - inicio
 
+from codigo_optimizado import main as tiempo_optimizado
+from codigo_original import main as tiempo_original
+
 etiquetas = ['Original', 'Optimizado']
-tiempos = [medir_tiempo(ejecutar_original), medir_tiempo(ejecutar_optimizado)]
+tiempos = [medir_tiempo(tiempo_original), medir_tiempo(tiempo_optimizado)]
 
 plt.bar(etiquetas, tiempos, color=['red', 'green'])
 plt.title('Comparación de Tiempos de Ejecución')
